@@ -1,0 +1,30 @@
+\begin{appendices}
+% \addto\captionsenglish{\renewcommand{\chaptername}{Appendix}}
+% \renewcommand{\chaptername}{Appendix}
+\renewcommand*{\chapterformat}{\LARGE{Appendix \thechapter}}
+\renewcommand{\chaptermark}[1]{\markboth{\appendixname \ \thechapter. \ #1}{}}
+
+% \input{RoboNurse-Diseases}
+
+% Speech and Person Recognition
+\input{tests/SPR_appendix.tex}
+
+\input{tests/GPSR_appendix.tex}
+
+\input{tests/EEGPSR_appendix.tex}
+
+\input{pages/example_skills}
+\newpage
+\input{general_rules/arena_decorations.tex}
+
+\end{appendices}
+
+% \renewcommand{\chaptername}{Chapter}
+% \addto\captionsenglish{\renewcommand{\chaptername}{Chapter}}
+\renewcommand*{\chapterformat}{\LARGE{Chapter \thechapter}}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter. \ #1}{}}
+
+
+% Local Variables:
+% TeX-master: "Rulebook"
+% End:

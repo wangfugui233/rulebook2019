@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Organization of the competition}
+\label{sec:procedure_during_competition}
+
+\subsection{Stage system}\label{rule:stages}
+
+The competition features a \iterm{stage system}. It is organized in two stages each consisting of a number of specific tasks. It ends with the \iterm{Finals}.
+
+Each \iaterm{stage} comprehends a set of tasks grouped in two thematic scenarios.
+% \iaterm{House Cleaner} and \iaterm{Party Host}.
+The \iaterm{House Holder} scenario features tasks related to cleaning, organizing, and giving maintenance; while the \iaterm{Party Host} scenario focuses in attending guests needs and providing general assistance during a party.
+
+\begin{enumerate}
+	\item \textbf{Robot Inspection:} For security, robots are inspected during setup days. A robot must pass \iterm{Robot Inspection} test (see~\refsec{sec:robot_inspection}) in order to compete.
+
+	\item \textbf{Stage~I:} The first days of the competition called \iterm{Stage~I}.
+	All qualified teams can participate in \iterm{Stage~I}.
+	The same task can be performed multiple times (See~\refsec{rule:score_system}).
+
+	\item \textbf{Stage~II:} The best \emph{50\% of teams}\footnotemark (after Stage~I) advance to \iterm{Stage~II}.
+	Here, tasks require more complex abilities or combinations of abilities.\\
+	\footnotetext{If the total number of teams is less than 12, up to 6 teams may advance to Stage~II}
+	The \iterm{Open Challenge} is the open demonstration in Stage~II.
+
+	\item \textbf{Final demonstration:} The best \emph{two teams} of each league, the ones with the highest score after Stage~II, advance to the final round.
+	The final round features only a single task integrating all tested abilities.
+	In order to participate in the Finals, a team must have solved at least one task of the Stage~II.
+\end{enumerate}
+
+In case of having no considerable score deviation between a team advancing to the next stage and a team dropping out, the TC may announce additional teams advancing to the next stage.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Schedule}
+\label{rule:schedule}
+
+\begin{enumerate}
+	\item \textbf{Thematic scenario blocks:} Each \iterm{thematic scenario} or \iterm{theme} is split in two \iterm{blocks}.
+	At least two blocks are scheduled per day, having each block an assigned theme and lasting no less than two hours.
+	The \iaterm{Organizing Committee}{OC} announces the schedule during the setup days (see Table \ref{tbl:schedule}).
+
+	\item \textbf{Slots:} The \iaterm{Organizing Committee}{OC} assigns at least two \iterm{test slots} of 5 minutes to each team in each block.
+	A team can solve any task during its test slot.
+	Remaining block time can be used to assign additional testing slots to interested teams.
+	Testing slots are randomly assigned to teams in each block.
+
+	\item \textbf{Tests:} Teams must inform the OC in advance which task(s) will try to solve.
+	Only one task can be attempted per test slot.
+
+	\item \textbf{Participation is default:} Teams have to indicate to the \iaterm{Organizing Committee}{OC} when they are \emph{skipping} a test slot. Without such indication, they may receive a penalty when not attending (see~\refsec{rule:not_attending}).
+\end{enumerate}
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h]
+	\centering\small
+	\newcommand{\teams}[3]{%
+		\tiny
+		\begin{tabular}{c}%
+			\textit{Test slot 1, team $#1$}\\
+			\textit{Test slot 2, team $#2$}\\
+			$\vdots$\\
+			\textit{Test slot $n$, team $#3$}\\
+		\end{tabular}
+	}
+	\newcommand{\wcell}[2]{%
+		\parbox[c]{2.5cm}{%
+			\vspace{#1}%
+			\centering%
+			#2%
+			\vspace{#1}%
+		}%
+	}
+	\newcommand{\cell}[1]{\wcell{0.2\baselineskip}{#1}}
+
+
+	\begin{tabular}{
+		>{\centering\arraybackslash}m{2.5cm}|%
+		>{\columncolor[HTML]{9AFF99}}c |%
+		>{\columncolor[HTML]{9AFF99}}c |%
+		>{\columncolor[HTML]{CBCEFB}}c |%
+		>{\columncolor[HTML]{CBCEFB}}c |%
+	}
+	\multicolumn{1}{ c }{}
+		& \multicolumn{1}{ c }{\cellcolor{white} Day 1 }
+		& \multicolumn{1}{ c }{\cellcolor{white} Day 2 }
+		& \multicolumn{1}{ c }{\cellcolor{white} Day 3 }
+		& \multicolumn{1}{ c }{\cellcolor{white} Day 4 }
+		\\\cline{2-5}
+	\cell{Block 1\\\footnotesize(9:00 - 12:00)}
+		& \cell{House Holder\\\teams{i}{j}{i}}
+		& \cell{Party Host\\\teams{k}{i}{k}}
+		& \cell{House Holder\\\teams{i}{j}{i}}
+		& \cell{Party Host\\\teams{j}{k}{j}}\\\cline{2-5}
+
+	\multicolumn{1}{ c }{}
+		& \multicolumn{4}{ c }{\wcell{0.5\baselineskip}{\color{gray}Lunch}}\\\cline{2-5}
+
+	\cell{Block 2\\\footnotesize(9:00 - 12:00)}
+		& \cell{House Holder\\\teams{i}{k}{i}}
+		& \cell{Party Host\\\teams{k}{j}{k}}
+		& \cell{Party Host\\\teams{i}{i}{k}}
+		& \cell{House Holder\\\teams{k}{j}{j}}\\\cline{2-5}
+
+	\multicolumn{1}{ c }{}
+		& \multicolumn{2}{ c }{\wcell{0.5\baselineskip}{\color[HTML]{029734}Stage 1}}
+		& \multicolumn{2}{ c }{\wcell{0.5\baselineskip}{\color[HTML]{6668e5}Stage 2}}\\
+	\end{tabular}
+
+	\caption{Example schedule.
+		Each team has assigned at least two test slots in every block.
+		At least two blocks are scheduled per day with an assigned theme.
+		A team can choose a different task in each test, meaning at least 4 different tests per stage.
+	}
+	\label{tbl:schedule}
+\end{table}
+
+
+\subsection{Score system}
+\label{rule:score_system}
+Each task has a main objective and a set of scoring bonuses.
+To score in a test, a team must successfully accomplish the main objective of the task; bonuses are not considered otherwise.
+Overall scoring is calculated as the sum of the maximum score obtained in each ability.
+
+The \iaterm{score system} has the following constrains
+\begin{enumerate}
+	\item \textbf{Stage~I:} The maximum total score per task in \iterm{Stage~I} is \scoring{1000 points}.
+	
+	\item \textbf{Stage~II:} The maximum total score per task in \iterm{Stage~I} is \scoring{2000 points}.
+
+	\item \textbf{\iterm{Finals}:} Final score is normalized and a special evaluation is used.
+
+	\item \textbf{Minimum score:} The minimum total score per test in \iterm{Stage~I} and \iterm{Stage~II} is \scoring{0 points}.
+	Teams cannot receive negative points.
+
+	\item \textbf{Penalties:} An exception to \emph{minimum score} rule are penalties.
+	Both penalties for not attending (see~\refsec{rule:not_attending}) and extraordinary penalties (see~\refsec{rule:extraordinary_penalties}) can cause a total negative score.
+\end{enumerate}
+
+
+
+
+% Local Variables:
+% TeX-master: "../Rulebook"
+% End:
